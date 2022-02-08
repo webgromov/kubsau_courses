@@ -1,0 +1,16 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+.header {
+	&__cap {
+		padding: 20px;
+		box-shadow: 0 0 20px rgba(0,0,0,.3);
+		&__menu {
+			ul {
+				display: flex;
+				list-style: none;
+			}
+		}
+	}
+}
