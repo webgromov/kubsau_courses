@@ -18,7 +18,7 @@ const html = cb => {
 }
 const css = cb => {
 	src(dirs.src + '/scss/*.scss')
-	.pipe(sass({outputStyle: "compressed"}))
+	.pipe(sass({errLogToConsole: true, outputStyle: "compressed"}))
 	.pipe(dest(dirs.dest + '/css'))
 	.pipe(browserSync.reload({stream: true}))
 	cb()
